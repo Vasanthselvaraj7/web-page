@@ -1,0 +1,160 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+/* header */
+.header
+{
+    min-height:100vh;
+    width:100%;
+    background-image:linear-gradient(rgba(4,7,30,0.7),rgba(4,7,30,0.7)),url(clg\ logo.png);
+    background-position :center;
+    background-size : cover;
+    background-attachment: fixed;
+
+}
+nav
+{
+ display: flex;
+ padding:2%5%;
+ justify-content: space-between;
+ align-items: center;
+
+}
+nav img
+{
+    width: 50%;
+}
+.nav-links
+{
+    flex:1;
+    text-align:right;
+}
+
+.nav-links ul li
+{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position:relative;
+}
+
+.nav-links ul li a
+{
+text-decoration: none;
+color: white;
+font-size: 20px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width:0%;
+    height:2px;
+    background:red;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width:100%
+}
+.text-box
+{
+width:90%;
+color:white;
+position:absolute;
+top:50%;
+left:50%;
+text-align: center;
+transform: translate(-50%,-50%);
+
+}
+.text-box h1
+{
+    font-size:62px;;
+}
+.text-box p
+{
+    margin:10px 0 40px;
+    font-size:16px;
+    color:white;
+}
+.hero-btn
+{
+    display:inline-block;
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+    padding:12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover
+{
+    border:2px solid #f44336;
+    border-radius: 10%; ;
+    background:#f44336;
+    transition:1s;
+}
+/* course */
+.course
+{
+    width: 80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}
+h1
+{
+    text-align:center ;
+    font-size:45px;
+    
+    
+}
+p
+{
+    font-size: 16px;
+    font-style:i;
+    color:black;
+    justify-content: space-between;
+    font-weight:30;
+    line-height:22px;
+    padding:10px;
+}
+.row
+{
+    margin-top:5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course
+{
+    flex-basis:32%;
+    border-radius:10px;
+    background:royalblue;
+    margin-bottom:5%;
+    padding:20px 12%;
+    box-sizing: border-box;
+    transition: 0.5s; 
+
+}
+.campus-col
+{
+    flex-basis:32%;
+    border-radius:10px;
+    margin-bottom:30%;
+    padding:20px 12%;
+    position:overflow;
+    overflow:hidden;
+}
+.campus-col img
+{
+    height:100px;
+    width:100px;
+    display: block;
+}
